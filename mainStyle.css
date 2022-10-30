@@ -29,7 +29,8 @@ canvas {
   min-height:100%;
   width:100%;
   background-color: #EEEEEE;
-	background-image: url("https://images.unsplash.com/photo-1487260211189-670c54da558d?ixlib=rb-1.2.1&dl=emile-seguin-R9OueKOtGGU-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+	background-image: url("images/emile-seguin-R9OueKOtGGU-unsplash.jpg");
+/* background-image: url("https://images.unsplash.com/photo-1487260211189-670c54da558d?ixlib=rb-1.2.1&dl=emile-seguin-R9OueKOtGGU-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb"); */
   /* background-image: linear-gradient(45deg, #ced4da 0%, #dee2e6 52%, #e9ecef 90%); */
   /* animation: bg-animation 3s infinite alternate; */
   background-size: 400% auto;
