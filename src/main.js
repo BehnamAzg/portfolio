@@ -15,7 +15,6 @@ navLinks.forEach((link) => {
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
   const movingElement = document.getElementById("movingElement");
-  console.log(scrollPosition)
   if (scrollPosition >= 0 && scrollPosition < 100) {
     movingElement.style.bottom = '0px'
   } else {
