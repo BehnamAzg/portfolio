@@ -1,0 +1,520 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+  }
+  @font-face {
+    .poppins-thin {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+    .poppins-extralight {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+    }
+    .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    .poppins-semibold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    .poppins-extrabold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-style: normal;
+    }
+    .poppins-black {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    .poppins-thin-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
+    .poppins-extralight-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      font-style: italic;
+    }
+    .poppins-light-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+    .poppins-regular-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .poppins-medium-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+    .poppins-semibold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+    }
+    .poppins-bold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+    .poppins-extrabold-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-style: italic;
+    }
+    .poppins-black-italic {
+      font-family: "Poppins", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
+
+@layer utilities {
+  .retro-screen {
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04)
+    );
+    background-size: 100% 8px;
+    animation: retroAnimation 500ms linear infinite;
+  }
+  @keyframes retroAnimation {
+    0%,
+    100% {
+      background-size: 100% 8px;
+    }
+    50% {
+      background-size: 100% 10px;
+      background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+    );
+    }
+  }
+  .gradient-overlayer {
+    background: linear-gradient(180deg, rgba(132, 189, 255, 1) 50%, rgba(193, 227, 255, 0) 150%);
+  }
+
+  .flicker-screen {
+    background: rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    animation: flickerAnimation 1s infinite, downToUp 8s linear infinite;
+  }
+
+  @keyframes downToUp {
+    0% {transform: translateY(-100vh);}
+    70%, 100% {transform: translateY(100vh);}
+  }
+
+  @keyframes flickerAnimation {
+    0% {
+      opacity: 0.27861;
+    }
+    5% {
+      opacity: 0.34769;
+    }
+    10% {
+      opacity: 0.23604;
+    }
+    15% {
+      opacity: 0.90626;
+    }
+    20% {
+      opacity: 0.18128;
+    }
+    25% {
+      opacity: 0.83891;
+    }
+    30% {
+      opacity: 0.65583;
+    }
+    35% {
+      opacity: 0.67807;
+    }
+    40% {
+      opacity: 0.26559;
+    }
+    45% {
+      opacity: 0.84693;
+    }
+    50% {
+      opacity: 0.96019;
+    }
+    55% {
+      opacity: 0.08594;
+    }
+    60% {
+      opacity: 0.20313;
+    }
+    65% {
+      opacity: 0.71988;
+    }
+    70% {
+      opacity: 0.53455;
+    }
+    75% {
+      opacity: 0.37288;
+    }
+    80% {
+      opacity: 0.71428;
+    }
+    85% {
+      opacity: 0.70419;
+    }
+    90% {
+      opacity: 0.7003;
+    }
+    95% {
+      opacity: 0.36108;
+    }
+    100% {
+      opacity: 0.24387;
+    }
+  }
+
+  .text-strok {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+  }
+  nav {
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all 1000ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+  }
+  #text-1 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 400ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  #text-2 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1600ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: scaleX(0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  #text-3 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 700ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  #text-4 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1300ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  #text-5 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1000ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  #text-6 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1000ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  #text-7 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1300ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  #text-8 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 700ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  #text-9 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 1600ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  #text-10 {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 300ms 400ms ease-in-out;
+    @starting-style {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  #pic-main {
+	  animation: rotateAnimation 1500ms cubic-bezier( 0, 0.50, 0.55, 1 ) 2;
+  }
+  
+  @keyframes rotateAnimation {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+  }
+  #pic-main {
+    opacity: 1;
+    transition: all 600ms 600ms ease-in;
+    @starting-style {
+      opacity: 0;
+    }
+  }
+
+  #pic-main:hover{
+    transition: all 50ms ease-in-out;
+  }
+  
+
+  #text-1, #text-10 {
+    animation-name: textCycle-1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #text-3, #text-8 {
+    animation-name: textCycle-2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+  #text-5, #text-6 {
+    animation-name: textCycle-3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #text-7, #text-4 {
+    animation-name: textCycle-4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #text-9, #text-2 {
+    animation-name: textCycle-5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes textCycle-1 {
+    0%, 10% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    10%, 20% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    20%, 30% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    30%, 40% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    40%, 50% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    50%, 60% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    60%, 70% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    70%, 80% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    80%, 90% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    90%, 100% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+  }
+  @keyframes textCycle-2 {
+    0%, 10% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    10%, 20% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    20%, 30% {-webkit-text-fill-color: transparent; text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;}
+    30%, 40% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    40%, 50% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    50%, 60% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    60%, 70% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    70%, 80% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    80%, 90% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    90%, 100% {-webkit-text-fill-color: transparent; text-shadow: none;}
+  }
+  @keyframes textCycle-3 {
+    0%, 10% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    10%, 20% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    20%, 30% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    30%, 40% {-webkit-text-fill-color: transparent; text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;}
+    40%, 50% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    50%, 60% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    60%, 70% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    70%, 80% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    80%, 90% {-webkit-text-fill-color: transparent; text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;}
+    90%, 100% {-webkit-text-fill-color: transparent; text-shadow: none;}
+  }
+  @keyframes textCycle-4 {
+    0%, 10% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    10%, 20% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    20%, 30% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    30%, 40% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    40%, 50% {-webkit-text-fill-color: transparent; text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;}
+    50%, 60% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    60%, 70% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    70%, 80% {-webkit-text-fill-color: transparent; text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;}
+    80%, 90% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    90%, 100% {-webkit-text-fill-color: transparent; text-shadow: none;}
+  }
+  @keyframes textCycle-5 {
+    0%, 10% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    10%, 20% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    20%, 30% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    30%, 40% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    40%, 50% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    50%, 60% {-webkit-text-fill-color: white; text-shadow: #FFF 0px 0px 5px;}
+    60%, 70% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    70%, 80% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    80%, 90% {-webkit-text-fill-color: transparent; text-shadow: none;}
+    90%, 100% {-webkit-text-fill-color: transparent; text-shadow: none;}
+  }
+  #logo-text:hover span {
+    display: inline-block;
+  }
+  #dino {
+    animation: dino-run 200ms linear infinite, dino-jump 5s linear infinite;
+  }
+  @keyframes dino-run {
+    0% {
+      background-image: url(./assets/images/dino_run_1.png);
+    }
+    100% {
+      background-image: url(./assets/images/dino_run_2.png);
+    }
+  }
+  @keyframes dino-jump {
+    0% { 
+      transform: translateY(0px);
+    }
+    48% {
+      transform: translateY(0px);
+    }
+    49% {
+      transform: translateY(-55px);
+    }
+    64% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  #dino-bg {
+    animation: pan 10s linear infinite;
+  }
+  @keyframes pan {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+  #cactus {
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    animation: pan-2 10s linear infinite;
+  }
+  #cactus-2 {
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    animation: pan-3 10s linear infinite;
+  }
+  #cloud {
+    background-position: 100% 0%;
+    background-size: auto 20%;
+    animation: pan-2 20s linear infinite;
+  }
+  @keyframes pan-2 {
+    0%{ 
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: -100% 0%;
+    }
+    100% {
+      background-position: -100% 0%;
+    }
+  }
+  @keyframes pan-3 {
+    0%, 50%{ 
+      background-position: 120% 0%;
+    }
+    50% {
+      background-position: 120% 0%;
+    }
+    100% {
+      background-position: -100% 0%;
+    }
+  }
+  .fadeIn {
+    scale: .7; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    /* animation-range: entry; */
+    animation-range-start: cover;
+    animation-range-end: 400px;
+  }
+  @keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+  }
+}

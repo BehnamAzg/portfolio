@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%22-.1em%22 y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
+    <title>Behnam's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body id="home" class="absolute h-full w-full">
+    <header>
+      <!-- Navigation Bar -->
+      <nav
+        class="fixed z-50 mt-14 h-10 w-full px-12 sm:px-16 md:px-20 lg:px-24 xl:px-28"
+      >
+        <div
+          class="mx-auto flex h-full w-full flex-wrap items-center justify-between rounded-lg bg-white text-xs"
+        >
+          <a
+            id="logo-text"
+            href="index.html"
+            class="sm:mx-5 mx-2 text-sm font-semibold tracking-widest text-blue-500 hover:animate-tada"
+          >
+            <span>&lt;B<span class="hidden">ehnam</span>&gt;</span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="mx-1 inline-flex h-8 w-8 items-center justify-center rounded-lg p-2 text-sm text-blue-500 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-200 sm:mx-4 md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-5 w-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="mt-4 flex w-full flex-col rounded-lg bg-white p-4 font-medium tracking-wide md:mt-0 md:flex-row md:space-x-4 md:bg-transparent md:p-0"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="navLinks block rounded bg-blue-500 px-3 py-2 text-blue-300 transition-transform hover:bg-blue-100 hover:text-blue-500 md:border-0 md:bg-transparent md:p-0 md:text-blue-500 md:hover:-translate-y-0.5 md:hover:bg-transparent"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="navLinks block rounded px-3 py-2 text-blue-300 transition-transform hover:bg-blue-100 hover:text-blue-500 md:border-0 md:bg-transparent md:p-0 md:hover:-translate-y-0.5 md:hover:bg-transparent"
+                  >ABOUT</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="navLinks block rounded px-3 py-2 text-blue-300 transition-transform hover:bg-blue-100 hover:text-blue-500 md:border-0 md:bg-transparent md:p-0 md:hover:-translate-y-0.5 md:hover:bg-transparent"
+                  >PROJECTS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="navLinks mr-0 block rounded px-3 py-2 text-blue-300 transition-transform hover:bg-blue-100 hover:text-blue-500 md:mr-5 md:border-0 md:bg-transparent md:p-0 md:hover:-translate-y-0.5 md:hover:bg-transparent"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Fixed Section -->
+    <section
+      class="fixed z-0 h-[100vh] min-h-full w-full bg-blue-300 bg-[url('./assets/images/gridBg.webp')] bg-cover bg-center"
+    >
+      <!-- Gradient Overlayer -->
+      <div
+        class="gradient-overlayer pointer-events-none h-[100vh] min-h-full w-full"
+      ></div>
+
+      <!-- Texts Main Container -->
+      <div
+        class="absolute top-0 z-20 flex min-h-full w-full items-center justify-center px-4 pt-10 sm:px-16 md:px-20 lg:px-24 xl:px-28"
+      >
+        <!-- Texts Sub Container -->
+        <div
+          class="mt-4 flex h-[83vh] w-full select-none flex-col justify-between gap-0 text-[14.8vw] font-bold leading-none text-white sm:text-[14vw] md:justify-center md:gap-8 md:text-[5.4vw] lg:text-[6vw] 2xl:items-center 2xl:justify-around"
+        >
+          <!-- 1st Row -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row 2xl:space-x-72"
+          >
+            <span id="text-1" class="text-strok">Front-end</span>
+            <span id="text-2" class="text-strok">Developer</span>
+          </div>
+          <!-- 2nd Row -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row 2xl:space-x-72"
+          >
+            <span id="text-3" class="text-strok">Front-end</span>
+            <span id="text-4" class="text-strok">Developer</span>
+          </div>
+          <!-- 3rd Row -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row 2xl:space-x-72"
+          >
+            <span id="text-5" class="text-strok">Front-end</span>
+            <span id="text-6" class="text-strok">Developer</span>
+          </div>
+          <!-- 4th Row -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row 2xl:space-x-72"
+          >
+            <span id="text-7" class="text-strok">Front-end</span>
+            <span id="text-8" class="text-strok">Developer</span>
+          </div>
+          <!-- 5th Row -->
+          <div
+            class="flex flex-col items-center justify-between md:flex-row 2xl:space-x-72"
+          >
+            <span id="text-9" class="text-strok">Front-end</span>
+            <span id="text-10" class="text-strok">Developer</span>
+          </div>
+        </div>
+      </div>
+      <!-- Picture Frame -->
+      <div
+        class="absolute inset-0 z-20 mx-auto flex min-h-full w-fit items-center justify-center pt-16"
+      >
+        <div
+          id="pic-main"
+          class="group h-[74vh] w-44 flex-shrink-0 overflow-hidden rounded-lg bg-white/20 backdrop-blur-sm hover:bg-sky-950/70"
+        >
+          <img
+            src="./assets/images/mouseIcon.svg"
+            class="absolute inset-0 mx-auto mt-8"
+          />
+          <img
+            src="./assets/images/arrowsIcon.svg"
+            class="absolute inset-0 mx-auto mt-24 animate-bounce"
+          />
+          <div
+            style="
+              writing-mode: vertical-rl;
+              text-orientation: upright;
+              transition: all 600ms ease-out;
+            "
+            class="absolute left-1/2 top-[41%] h-fit w-fit -translate-x-1/2 -translate-y-1/2 transform select-none font-mono font-semibold tracking-[.4rem] text-transparent group-hover:text-white"
+          >
+            BEHNAM
+          </div>
+          <img
+            id="movingElement"
+            class="absolute bottom-0"
+            src="./assets/images/avatar.webp"
+            alt="Avatar"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Retro Screen -->
+    <div
+      class="retro-screen pointer-events-none fixed top-0 z-[99] h-[1vh] min-h-full w-full bg-cover"
+    ></div>
+
+    <!-- Flicker -->
+    <div
+      class="pointer-events-none fixed top-0 z-[97] h-[1vh] min-h-full w-full bg-cover"
+    >
+      <div class="flicker-screen absolute bottom-0 h-10 w-full"></div>
+    </div>
+
+    <!-- Canvas -->
+    <canvas
+      id="canvas1"
+      class="pointer-events-none fixed top-0 z-[98] h-[1vh] min-h-full w-full bg-cover"
+    ></canvas>
+
+    <!-- Monitor Frame -->
+    <div
+      class="bg-cove pointer-events-none fixed top-0 z-[100] box-border h-[1vh] min-h-full w-full border-[14px] border-b-[#e5d9bf] border-l-[#e5d9bf] border-r-[#f0ead0] border-t-[#f0ead0]"
+    >
+      <div
+        class="box-border h-full w-full border-[12px] border-b-[#f5f0db] border-l-[#f5f0db] border-r-[#e7e0c4] border-t-[#e7e0c4]"
+      >
+        <div
+          style="box-shadow: inset 0 0 30px black"
+          class="flex h-full w-full border-8 border-black"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main
+      id="about"
+      class="relative z-20 mt-[100vh] min-h-full w-full border-t-2 bg-blue-400/70 px-12 pt-36 backdrop-blur-lg sm:px-16 md:px-20 lg:px-24 xl:px-28 pb-14"
+    >
+      <!-- About -->
+      <div
+        class="fadeIn grid h-fit w-full grid-cols-1 gap-4 rounded-lg md:grid-cols-12"
+      >
+        <!-- column 1 -->
+        <div
+          class="relative col-span-1 h-full w-full rounded-lg border border-blue-300 md:col-span-7"
+        >
+          <div
+            class="mb-10 w-full p-4 leading-loose tracking-[0.08rem] text-white lg:mb-0"
+          >
+            <h1 class="text-3xl font-bold">ABOUT ME</h1>
+            <hr class="my-4 h-px border-0 bg-blue-300" />
+            <p class="text-pretty tracking-wider">
+              Hi, I'm <b>Behnam</b>! 👋
+              <br />
+              I'm a 26-year-old front-end developer from Iran, excited to start
+              my journey in the tech industry.
+              <br />
+              Although I’m fairly new to the field, I’m motivated, and ready to
+              bring my skills to my first role in tech.
+            </p>
+          </div>
+          <!-- Dino -->
+          <div class="absolute bottom-0 h-24 w-full overflow-x-hidden">
+            <div
+              id="dino-bg"
+              class="absolute bottom-0 h-4 w-full bg-[url('./assets/images/ground.png')] bg-cover bg-repeat-x will-change-[background-position]"
+            ></div>
+            <div
+              id="cloud"
+              class="absolute bottom-1 h-14 w-full bg-[url('./assets/images/cloud.png')] bg-auto bg-no-repeat"
+            ></div>
+            <div
+              id="dino"
+              class="absolute bottom-1 ml-4 h-10 w-10 bg-[url('./assets/images/dino_run1.png')] bg-cover bg-no-repeat"
+            ></div>
+            <div
+              id="cactus"
+              class="absolute bottom-1 h-8 w-full bg-[url('./assets/images/cactus_1.png')] bg-auto bg-no-repeat"
+            ></div>
+            <div
+              id="cactus-2"
+              class="absolute bottom-1 h-8 w-full bg-[url('./assets/images/cactus_2.png')] bg-auto bg-no-repeat"
+            ></div>
+          </div>
+        </div>
+
+        <!-- column 2 -->
+        <div
+          class="col-span-1 flex h-full w-full items-center justify-center rounded-lg border border-blue-300 bg-sky-950/70 p-4 md:col-span-5"
+        >
+          <pre
+            class="h-fit w-fit font-mono text-[10px] font-medium sm:text-xs lg:text-base"
+          >
+<span class="text-keywords">const</span> <span class="text-properties">coder</span> <span class="text-punctuations">= {</span>
+  <span class="text-properties">name:</span> <span class="text-punctuations">'</span><span class="text-strings">Behnam</span><span class="text-punctuations">',</span>
+  <span class="text-properties">skills:</span> <span class="text-punctuations">['</span><span class="text-strings">HTML & CSS</span><span class="text-punctuations">',</span> <span class="text-punctuations">'</span><span class="text-strings">Tailwind CSS</span><span class="text-punctuations">',</span>
+  <span class="text-punctuations">'</span><span class="text-strings">JavaScript</span><span class="text-punctuations">',</span> <span class="text-punctuations">'</span><span class="text-strings">TypeScript</span><span class="text-punctuations">',</span> <span class="text-punctuations">'</span><span class="text-strings">Node.js</span><span class="text-punctuations">',</span>
+  <span class="text-punctuations">'</span><span class="text-strings">HTMX</span><span class="text-punctuations">'</span><span class="text-punctuations">],</span>
+  <span class="text-properties">hardWorker:</span> <span class="text-keywords">true</span><span class="text-punctuations">,</span>
+  <span class="text-properties">problemSolver:</span> <span class="text-keywords">true</span><span class="text-punctuations">,</span>
+  <span class="text-methods">hireable:</span> <span class="text-keywords">function</span><span class="text-punctuations">() {</span>
+    <span class="text-keywords">return</span> <span class="text-punctuations">(</span>
+      <span class="text-methods">this.</span><span class="text-properties">hardWorker</span> <span class="text-strings">&&</span>
+      <span class="text-methods">this.</span><span class="text-properties">problemSolver</span> <span class="text-strings">&&</span>
+      <span class="text-methods">this.</span><span class="text-properties">skills.length</span> <span class="text-strings ">>=</span> <span class="text-methods">6</span>
+    <span class="text-punctuations">);</span>
+  <span class="text-punctuations">}</span>
+<span class="text-punctuations">}</span></pre>
+        </div>
+      </div>
+
+      <!-- My skills -->
+      <div class="fadeIn mt-28 h-fit w-full rounded-lg border border-blue-300">
+        <div
+          class="w-full p-4 leading-loose tracking-[0.08rem] text-white md:mb-0"
+        >
+          <h1 class="text-3xl font-bold">MY SKILLS</h1>
+          <hr class="my-4 h-px border-0 bg-blue-300" />
+
+          <!-- skills -->
+          <div
+            class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <!-- 1st -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-orange-500 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-orange-500 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/HTML.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">HTML & CSS</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  Web foundation
+                </h4>
+              </div>
+            </div>
+
+            <!-- 2nd -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-sky-700 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-sky-700 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/TailwindCSS.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">Tailwind CSS</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  CSS framework
+                </h4>
+              </div>
+            </div>
+
+            <!-- 3rd -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-yellow-400 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-yellow-400 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/JavaScript.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">JavaScript</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  Programming language
+                </h4>
+              </div>
+            </div>
+
+            <!-- 4th -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-[#3178c6] bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-[#3178c6] bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/TypeScript.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">TypeScript</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  Programming language
+                </h4>
+              </div>
+            </div>
+
+            <!-- 5th -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-lime-700 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-lime-700 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/Node-js.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">Node.js</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  JavaScript runtime
+                </h4>
+              </div>
+            </div>
+
+            <!-- 6th -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-[#3d72d7] bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-[#3d72d7] bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/htmx.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">HTMX</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  JavaScript library
+                </h4>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <hr class="my-4 h-px border-0 bg-blue-300" />
+          <h1 class="mt-4 text-3xl font-bold">CURRENTLY LEARNING</h1>
+          <hr class="my-4 h-px border-0 bg-blue-300" />
+
+          <!-- currently learning -->
+          <div
+            class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <!-- 1st -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-blue-600 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-blue-600 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/React.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">React</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  JavaScript library
+                </h4>
+              </div>
+            </div>
+
+            <!-- 2nd -->
+            <div
+              class="flex h-16 w-full gap-3 rounded-md border border-blue-300 bg-teal-600 bg-opacity-30 p-2 hover:bg-sky-950/70"
+            >
+              <!-- icon -->
+              <div
+                class="flex aspect-square h-full items-center justify-center rounded bg-teal-600 bg-opacity-30"
+              >
+                <img
+                  loading="lazy"
+                  class="h-8 w-8"
+                  src="./assets/images/electron.svg"
+                />
+              </div>
+              <!-- Text -->
+              <div class="flex w-full flex-col justify-center gap-2">
+                <h3 class="font-medium leading-none">Electron</h3>
+                <h4 class="text-[10px] leading-none text-gray-200">
+                  Software framework
+                </h4>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <!-- projects anchor link -->
+        <div id="projects"></div>
+      </div>
+
+      <!-- Projects -->
+      <div
+        class="fadeIn mt-28 h-fit w-full rounded-lg border border-blue-300"
+      >
+        <div
+          class="w-full p-4 leading-loose tracking-[0.08rem] text-white md:mb-0"
+        >
+          <h1 class="text-3xl font-bold">MY PROJECTS</h1>
+          <hr class="my-4 h-px border-0 bg-blue-300" />
+
+          <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+            <!-- 1st project -->
+            <div
+              class="relative flex h-full w-full flex-col rounded-md border border-blue-300 bg-sky-950/70 lg:flex-row"
+            >
+              <!-- image -->
+              <div
+                class="flex aspect-square h-auto w-full items-center justify-center rounded-s bg-black/10 p-2 lg:h-full lg:w-auto"
+              >
+                <img
+                  loading="lazy"
+                  class="h-full w-full rounded"
+                  src="./assets/images/laws-of-motion.webp"
+                />
+              </div>
+              <!-- Text -->
+              <div class="p-4 flex h-fit w-full flex-col justify-start gap-2 ">
+                <h3 class="text-lg font-medium leading-none">Laws of Motion</h3>
+                <h4 class="text-xs leading-none text-white/70">
+                  Sports Website
+                </h4>
+                <div class="mt-2 flex h-fit w-full flex-wrap gap-2 ">
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    HTML & CSS
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    Tailwind CSS
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    JavaScript
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    Node.js
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    MongoDB
+                  </div>
+                </div>
+                <div class="h-8 w-full"></div>
+              </div>
+              <a
+                href="https://behnamazg.github.io/laws-of-motion/src/"
+                target="_blank"
+                class="absolute bottom-4 right-4 float-right ml-auto inline-block h-fit w-fit cursor-pointer text-[10px] text-white underline underline-offset-4 hover:text-blue-300"
+              >
+                View Project >
+              </a>
+            </div>
+
+            <!-- 2nd project -->
+            <div
+              class="relative flex h-full w-full flex-col rounded-md border border-blue-300 bg-sky-950/70 lg:flex-row"
+            >
+              <!-- image -->
+              <div
+                class="flex aspect-square h-auto w-full items-center justify-center rounded-s bg-black/10 p-2 lg:h-full lg:w-auto"
+              >
+                <img
+                  loading="lazy"
+                  class="h-full w-full rounded"
+                  src="./assets/images/topialand.webp"
+                />
+              </div>
+              <!-- Text -->
+              <div class="p-4 flex h-fit w-full flex-col justify-start gap-2">
+                <h3 class="text-lg font-medium leading-none">Topialand</h3>
+                <h4 class="text-xs leading-none text-white/70">
+                  Ecommerce Website
+                </h4>
+                <div class="mt-2 flex h-fit w-full flex-wrap gap-2">
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    HTML & CSS
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    Tailwind CSS
+                  </div>
+                  <div
+                    class="h-fit w-fit rounded bg-white/10 px-2 py-1 text-[10px]"
+                  >
+                    JavaScript
+                  </div>
+                </div>
+                <div class="h-8 w-full"></div>
+              </div>
+              <a
+                href="https://behnamazg.github.io/topialand/src/"
+                target="_blank"
+                class="absolute bottom-4 right-4 float-right ml-auto inline-block h-fit w-fit cursor-pointer text-[10px] text-white underline underline-offset-4 hover:text-blue-300"
+              >
+                View Project >
+              </a>
+            </div>
+
+            <!-- 3rd project -->
+             
+            
+
+          </div>
+        </div>
+        <!-- contact anchor link -->
+        <div id="contact"></div>
+      </div>
+
+      <!-- contact -->
+      <div
+        class="fadeIn mt-28 h-fit w-full rounded-lg border border-blue-300"
+      >
+        <div class=" w-full p-4 leading-loose text-white md:mb-0">
+          <h1 class="text-3xl font-bold">CONTACT ME</h1>
+          <hr class="my-4 h-px border-0 bg-blue-300" />
+
+          <form
+            action="https://formsubmit.co/BehnamAzg@gmail.com"
+            class=""
+            method="POST"
+          >
+            <div
+              class="flex h-full w-full flex-col items-center gap-4 text-sm "
+            >
+            <div class="flex w-full gap-4 flex-col md:flex-row">
+              <input
+                type="text"
+                class="w-full rounded-md border border-blue-300 bg-white/70 text-sm text-sky-950 focus-within:bg-white/85"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+
+              <input
+                type="email"
+                class="w-full rounded-md border border-blue-300 bg-white/70 text-sm text-sky-950 focus-within:bg-white/85"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+              
+
+              <textarea
+                rows="8"
+                name="message"
+                id=""
+                placeholder="Write your message here..."
+                class="w-full rounded-md border border-blue-300 bg-white/70 text-sm text-sky-950 focus-within:bg-white/85"
+              ></textarea>
+
+              <div class="flex w-full justify-between flex-col md:flex-row gap-4">
+                <button
+                  type="submit"
+                  class="flex items-center justify-center gap-1.5 rounded-md border border-blue-300 bg-sky-950/70 px-3 py-2 text-sm transition-transform hover:scale-[0.95] hover:bg-sky-950"
+                >
+                  Send Message<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M240,127.89a16,16,0,0,1-8.18,14L63.9,237.9A16.15,16.15,0,0,1,56,240a16,16,0,0,1-15-21.33l27-79.95A4,4,0,0,1,71.72,136H144a8,8,0,0,0,8-8.53,8.19,8.19,0,0,0-8.26-7.47h-72a4,4,0,0,1-3.79-2.72l-27-79.94A16,16,0,0,1,63.84,18.07l168,95.89A16,16,0,0,1,240,127.89Z"
+                    ></path>
+                  </svg>
+                </button>
+
+                <a
+                  href="https://t.me/behnamazg"
+                  target="_blank"
+                  class="flex items-center justify-center gap-1.5 rounded-md border border-blue-300 bg-sky-500/70 hover:bg-sky-600 px-3 py-2 text-center transition-transform hover:scale-[0.95]"
+                  ><svg
+                    class="h-4 w-4"
+                    fill="currentColor"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Telegram</title>
+                    <path
+                      d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                    /></svg>Telegram
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Credit -->
+       <div class="w-full h-fit mt-28 text-blue-100 text-[10px] text-center relative ">
+        © 2025 Behnam Azg, All rights reserved.
+        <a href="#home" class="w-8 h-8 absolute inset-0 mx-auto -mt-16 sm:mx-0 sm:mt-auto sm:ml-auto rounded-md border border-blue-300 flex justify-center items-center hover:bg-sky-950/70 hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg>
+        </a>
+      </div>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+  <script src="./canvas.js"></script>
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
