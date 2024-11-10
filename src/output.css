@@ -1904,6 +1904,10 @@ html {
   background-image: url('./assets/images/ground.png');
 }
 
+.bg-\[url\(\'\.\/assets\/images\/dino_run_1\.png\'\)\] {
+  background-image: url('./assets/images/dino_run_1.png');
+}
+
 .bg-auto {
   background-size: auto;
 }
