@@ -1812,6 +1812,11 @@ html {
   background-color: rgb(255 90 31 / var(--tw-bg-opacity));
 }
 
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 58 242 / var(--tw-bg-opacity));
+}
+
 .bg-sky-500\/70 {
   background-color: rgb(14 165 233 / 0.7);
 }
@@ -1854,11 +1859,6 @@ html {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
-}
-
-.bg-purple-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 58 242 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -1968,16 +1968,6 @@ html {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pb-14 {
