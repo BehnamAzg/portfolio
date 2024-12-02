@@ -1191,10 +1191,6 @@ html {
   float: right;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1431,6 +1427,10 @@ html {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
@@ -1755,11 +1755,6 @@ html {
   background-color: rgb(61 114 215 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F05133\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 81 51 / var(--tw-bg-opacity));
-}
-
 .bg-black\/10 {
   background-color: rgb(0 0 0 / 0.1);
 }
@@ -1786,11 +1781,6 @@ html {
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
-}
-
-.bg-blue-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 56 118 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -1866,14 +1856,9 @@ html {
   background-color: rgb(227 160 8 / var(--tw-bg-opacity));
 }
 
-.bg-lime-500 {
+.bg-purple-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
-}
-
-.bg-lime-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(101 163 13 / var(--tw-bg-opacity));
+  background-color: rgb(126 58 242 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -1892,8 +1877,8 @@ html {
   background-image: url('./assets/images/cloud.png');
 }
 
-.bg-\[url\(\'\.\/assets\/images\/dino_run1\.png\'\)\] {
-  background-image: url('./assets/images/dino_run1.png');
+.bg-\[url\(\'\.\/assets\/images\/dino_run_1\.png\'\)\] {
+  background-image: url('./assets/images/dino_run_1.png');
 }
 
 .bg-\[url\(\'\.\/assets\/images\/gridBg\.webp\'\)\] {
@@ -1902,10 +1887,6 @@ html {
 
 .bg-\[url\(\'\.\/assets\/images\/ground\.png\'\)\] {
   background-image: url('./assets/images/ground.png');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/dino_run_1\.png\'\)\] {
-  background-image: url('./assets/images/dino_run_1.png');
 }
 
 .bg-auto {
@@ -1987,6 +1968,16 @@ html {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pb-14 {
@@ -3379,6 +3370,11 @@ nav {
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:text-\[6vw\] {
